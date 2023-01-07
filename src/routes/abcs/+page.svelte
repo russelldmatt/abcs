@@ -27,11 +27,19 @@
 		'Y',
 		'Z'
 	];
+
+	let nletters = 26;
+
+	$: letters = alphabet.slice(0, nletters);
 </script>
 
 <a href="/">← Back</a>
+
+<p>How many letters would you like to see?</p>
+<input type="number" bind:value={nletters} />
+
 <div class="container">
-	{#each alphabet as letter}
+	{#each letters as letter}
 		<div class="letter box">{letter}</div>
 	{/each}
 </div>

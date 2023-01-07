@@ -4,7 +4,7 @@
 </script>
 
 <a href="/">← Back</a>
-<p>How many numbers?</p>
+<p>How many numbers would you like to see?</p>
 <input type="number" bind:value={nnumbers} />
 <div class="container">
 	{#each numbers as number}
